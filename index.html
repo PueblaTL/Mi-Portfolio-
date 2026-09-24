@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Agustín Puebla | Desarrollo Web &amp; Backend</title>
+  <meta name="description"
+    content="Desarrollo de páginas web, catálogos, sistemas de reservas y soluciones web personalizadas. Portfolio de Agustín Puebla, desarrollador web y estudiante de Licenciatura en Sistemas.">
+  <meta property="og:title" content="Agustín Puebla | Desarrollo Web &amp; Backend">
+  <meta property="og:description"
+    content="Desarrollo de páginas web, catálogos, sistemas de reservas y soluciones web personalizadas. Portfolio de Agustín Puebla, desarrollador web y estudiante de Licenciatura en Sistemas.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B0D10">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <meta property="og:locale" content="es_AR">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <!-- Agregar canonical y og:url con la URL definitiva al publicar. Ver README.md. -->
+  <script src="js/theme.js">
+  </script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/navigation.js" defer>
+  </script>
+  <script src="js/animations.js" defer>
+  </script>
+  <script src="js/main.js" defer>
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#inicio" class="logo">
+        <span class="dot">
+        </span>Agustín Puebla</a>
+      <ul class="nav-links">
+        <li>
+          <a href="#servicios">Servicios</a>
+        </li>
+        <li>
+          <a href="#proyectos">Proyectos</a>
+        </li>
+        <li>
+          <a href="#sobre-mi">Sobre mí</a>
+        </li>
+        <li>
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a class="icon-btn" href="https://github.com/PueblaTL" target="_blank" rel="noopener"
+          aria-label="GitHub de Agustín Puebla">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.79 10.79.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17.91-.25 1.89-.38 2.86-.39.97.01 1.95.14 2.86.39 2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.66 5.34-5.2 5.62.41.35.77 1.04.77 2.11 0 1.53-.01 2.75-.01 3.12 0 .3.2.66.79.55A11.53 11.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/agustin-puebla-468690181/" target="_blank" rel="noopener"
+          aria-label="LinkedIn de Agustín Puebla">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.44C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0Z" />
+          </svg>
+        </a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo claro">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+          </svg>
+        </button>
+        <button class="burger" id="burgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobilePanel">
+          <span>
+          </span>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-panel" id="mobilePanel">
+      <ul>
+        <li>
+          <a href="#servicios" class="mnav">Servicios</a>
+        </li>
+        <li>
+          <a href="#proyectos" class="mnav">Proyectos</a>
+        </li>
+        <li>
+          <a href="#sobre-mi" class="mnav">Sobre mí</a>
+        </li>
+        <li>
+          <a href="#contacto" class="mnav">Contacto</a>
+        </li>
+      </ul>
+      <div class="socials">
+        <a class="icon-btn" href="https://github.com/PueblaTL" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.79 10.79.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17.91-.25 1.89-.38 2.86-.39.97.01 1.95.14 2.86.39 2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.66 5.34-5.2 5.62.41.35.77 1.04.77 2.11 0 1.53-.01 2.75-.01 3.12 0 .3.2.66.79.55A11.53 11.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/agustin-puebla-468690181/" target="_blank" rel="noopener"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.44C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <section id="inicio">
+      <div class="wrap hero">
+        <div class="reveal in">
+          <div class="hero-greeting">Hola, soy</div>
+          <h1>Agustín Puebla</h1>
+          <div class="role">Desarrollador Web <span class="accentc">/</span> Backend Developer</div>
+          <p>Desarrollo sitios y aplicaciones web para negocios, profesionales y emprendimientos, combinando diseño
+            responsive, backend y bases de datos para crear soluciones funcionales y adaptadas a cada proyecto.</p>
+          <p>Estudiante de Licenciatura en Sistemas, actualmente profundizando en Java, Spring Boot y desarrollo
+            backend.</p>
+          <span class="tag-avail">
+            <span class="blip">
+            </span>Disponible para proyectos freelance</span>
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+            <a href="#servicios" class="btn btn-ghost">Servicios Web</a>
+            <a href="#contacto" class="btn btn-ghost">Contactarme</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/PueblaTL" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.79 10.79.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17.91-.25 1.89-.38 2.86-.39.97.01 1.95.14 2.86.39 2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.66 5.34-5.2 5.62.41.35.77 1.04.77 2.11 0 1.53-.01 2.75-.01 3.12 0 .3.2.66.79.55A11.53 11.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/agustin-puebla-468690181/" target="_blank" rel="noopener"
+              class="btn btn-ghost">LinkedIn</a>
+          </div>
+        </div>
+        <div class="reveal in">
+          <aside class="solution-card" aria-label="Soluciones para tu negocio">
+            <div class="eyebrow">De una idea a una solución web</div>
+            <h2>Tu negocio.<br>Su próximo paso digital.</h2>
+            <div class="solution-row">
+              <span class="solution-number">01</span>
+              <div>
+                <strong>Presentá lo que hacés</strong>
+                <p>Una web clara, rápida y adaptable.</p>
+              </div>
+            </div>
+            <div class="solution-row">
+              <span class="solution-number">02</span>
+              <div>
+                <strong>Mostrá tus productos</strong>
+                <p>Un catálogo que podés administrar.</p>
+              </div>
+            </div>
+            <div class="solution-row">
+              <span class="solution-number">03</span>
+              <div>
+                <strong>Simplificá tu gestión</strong>
+                <p>Reservas, usuarios y sistemas a medida.</p>
+              </div>
+            </div>
+            <a href="#proyectos" class="solution-link">Conocé el caso Marian Estilista <span aria-hidden="true">↗</span>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section id="servicios">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Desarrollo para negocios reales</div>
+          <h2>Servicios de Desarrollo Web</h2>
+          <p>Soluciones web adaptadas a las necesidades de cada proyecto. Desde una primera presencia online hasta un
+            sistema para gestionar tu negocio.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <span class="package-number">01 / Tu primera presencia online.</span>
+            <h3>Web Inicial</h3>
+            <p class="price">
+              <span>Desde</span> $150.000 <small>ARS</small>
+            </p>
+            <p>Ideal para profesionales, peluqueros, electricistas, gastronomía, servicios independientes,
+              emprendimientos y pequeños comercios.</p>
+            <ul>
+              <li>Landing Page One-Page de hasta 5–6 secciones</li>
+              <li>Diseño responsive</li>
+              <li>WhatsApp y redes sociales</li>
+              <li>Formulario o información de contacto</li>
+              <li>Mapa si corresponde</li>
+              <li>SEO técnico básico</li>
+              <li>Configuración para publicación</li>
+            </ul>
+            <p class="package-note">Por ejemplo: inicio, servicios, sobre nosotros, galería, contacto y ubicación.</p>
+            <a class="btn btn-ghost" href="#contacto" data-package="Web Inicial">Solicitar presupuesto <span
+                aria-hidden="true">↗</span>
+            </a>
+          </article>
+          <article class="price-card">
+            <span class="package-number">02 / Más espacio para mostrar tu negocio.</span>
+            <h3>Web Profesional</h3>
+            <p class="price">
+              <span>Desde</span> $280.000 <small>ARS</small>
+            </p>
+            <p>Para negocios que necesitan una presencia digital más completa.</p>
+            <ul>
+              <li>Varias páginas o secciones</li>
+              <li>Diseño personalizado y responsive</li>
+              <li>Galería, servicios o productos</li>
+              <li>Contacto, WhatsApp y redes sociales</li>
+              <li>Mapa y SEO técnico básico</li>
+              <li>Configuración y publicación del sitio</li>
+            </ul>
+            <p class="package-note">Por ejemplo: inicio, servicios, nosotros, galería, preguntas frecuentes y contacto.
+            </p>
+            <a class="btn btn-primary" href="#contacto" data-package="Web Profesional">Solicitar presupuesto <span
+                aria-hidden="true">↗</span>
+            </a>
+          </article>
+          <article class="price-card">
+            <span class="package-number">03 / Tu catálogo, siempre actualizado.</span>
+            <h3>Catálogo Administrable</h3>
+            <p class="price">
+              <span>Desde</span> $400.000 <small>ARS</small>
+            </p>
+            <p>Para tiendas, comercios, gastronomía, catálogos de servicios, emprendimientos y distribuidores.</p>
+            <ul>
+              <li>Todo lo correspondiente a Web Profesional</li>
+              <li>Base de datos y catálogo dinámico</li>
+              <li>Categorías, buscador y filtros</li>
+              <li>Panel administrativo</li>
+              <li>Agregar, modificar y eliminar productos</li>
+              <li>Gestión de información del catálogo</li>
+            </ul>
+            <p class="package-note">Permite mostrar productos y recibir consultas sin requerir carrito ni pagos online.
+            </p>
+            <a class="btn btn-ghost" href="#contacto" data-package="Catálogo Administrable">Solicitar presupuesto <span
+                aria-hidden="true">↗</span>
+            </a>
+          </article>
+          <article class="price-card">
+            <span class="package-number">04 / Una solución para tu forma de trabajar.</span>
+            <h3>Desarrollo a Medida</h3>
+            <p class="price">
+              <span>Desde</span> $600.000 <small>ARS</small>
+            </p>
+            <p>Para proyectos con funcionalidades personalizadas. El precio final depende del alcance.</p>
+            <ul>
+              <li>Login, registro, roles y permisos</li>
+              <li>Panel administrativo y base de datos</li>
+              <li>Reservas, turnos e inscripciones</li>
+              <li>Emails automáticos y recuperación de contraseña</li>
+              <li>Gestión de información y formularios avanzados</li>
+              <li>APIs e integraciones externas</li>
+              <li>Lógica de negocio personalizada</li>
+            </ul>
+            <p class="package-note">Puede incluir estas funcionalidades, según lo que se acuerde en la propuesta.</p>
+            <a class="btn btn-ghost" href="#contacto" data-package="Desarrollo a Medida">Consultar proyecto <span
+                aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+        <details class="comparison">
+          <summary>Comparar qué incluye cada paquete</summary>
+          <div class="table-scroll" role="region" aria-label="Comparación de servicios" tabindex="0">
+            <table>
+              <caption>Funcionalidades por paquete. Las opciones se presupuestan según el alcance.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Funcionalidad</th>
+                  <th scope="col">Web Inicial</th>
+                  <th scope="col">Web Profesional</th>
+                  <th scope="col">Catálogo</th>
+                  <th scope="col">A Medida</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Responsive, WhatsApp y SEO básico</th>
+                  <td>Sí</td>
+                  <td>Sí</td>
+                  <td>Sí</td>
+                  <td>Sí</td>
+                </tr>
+                <tr>
+                  <th scope="row">Varias páginas</th>
+                  <td>—</td>
+                  <td>Sí</td>
+                  <td>Sí</td>
+                  <td>Sí</td>
+                </tr>
+                <tr>
+                  <th scope="row">Base de datos y panel administrador</th>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>Sí</td>
+                  <td>Sí</td>
+                </tr>
+                <tr>
+                  <th scope="row">Usuarios y reservas</th>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>Opcional</td>
+                </tr>
+                <tr>
+                  <th scope="row">Integraciones</th>
+                  <td>—</td>
+                  <td>Opcional</td>
+                  <td>Opcional</td>
+                  <td>Sí</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <div class="extras">
+          <h3>Funcionalidades adicionales</h3>
+          <p>Cada proyecto puede personalizarse incorporando funcionalidades adicionales según las necesidades del
+            negocio.</p>
+          <p class="package-note">Precios orientativos en ARS.</p>
+          <dl class="extras-grid">
+            <div>
+              <dt>Página o sección adicional</dt>
+              <dd>$25.000 – $50.000</dd>
+            </div>
+            <div>
+              <dt>Formulario personalizado</dt>
+              <dd>$30.000 – $50.000</dd>
+            </div>
+            <div>
+              <dt>Galería administrable</dt>
+              <dd>$50.000 – $80.000</dd>
+            </div>
+            <div>
+              <dt>Panel administrador</dt>
+              <dd>$100.000 – $200.000</dd>
+            </div>
+            <div>
+              <dt>Login y registro</dt>
+              <dd>$80.000 – $150.000</dd>
+            </div>
+            <div>
+              <dt>Recuperación de contraseña / Email</dt>
+              <dd>$40.000 – $80.000</dd>
+            </div>
+            <div>
+              <dt>Integración Mercado Pago</dt>
+              <dd>$100.000 – $180.000</dd>
+            </div>
+            <div>
+              <dt>Sistema de reservas</dt>
+              <dd>$150.000 – $300.000</dd>
+            </div>
+            <div>
+              <dt>Carga inicial de productos</dt>
+              <dd>Precio según cantidad</dd>
+            </div>
+            <div>
+              <dt>Funcionalidad especial</dt>
+              <dd>Presupuesto personalizado</dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="pricing-note">
+          <p>Los precios publicados son orientativos y pueden variar según el alcance, diseño, cantidad de contenido,
+            integraciones y complejidad del proyecto.</p>
+          <p>
+            <strong>Hosting y dominio se contratan y pagan por separado.</strong> No están incluidos en el precio del
+            desarrollo y son abonados por el cliente. Si no disponés de ellos, puedo asesorarte durante la contratación
+            y configuración.
+          </p>
+        </aside>
+      </div>
+    </section>
+    <section id="proyectos">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="featured">
+            <div class="featured-top">
+              <div>
+                <div class="featured-kicker">Proyecto destacado · Desarrollo Web Full Stack / Sistema de Reservas</div>
+                <h2>Marian Estilista</h2>
+                <p class="subtitle">Sistema web integral para un salón de peluquería real: combina una landing comercial
+                  con funcionalidades propias de una aplicación web completa — reservas, usuarios, panel administrativo
+                  y más.</p>
+              </div>
+              <div class="featured-actions">
+                <a href="#contacto" class="btn btn-primary" data-package="Desarrollo a Medida">Quiero una solución así
+                  ↗</a>
+              </div>
+            </div>
+            <div class="stack-line">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">PHP</span>
+              <span class="chip">MySQL / MariaDB</span>
+              <span class="chip">Leaflet.js</span>
+              <span class="chip">OpenStreetMap</span>
+              <span class="chip">SMTP</span>
+              <span class="chip">Git / GitHub</span>
+            </div>
+            <h3 class="detail-3">Funcionalidades principales</h3>
+            <div class="feature-grid">
+              <div class="feature-card">
+                <h4>Sistema de reservas</h4>
+                <p>Selección de servicio, fecha, horario y datos del cliente, con control de disponibilidad de turnos.
+                </p>
+              </div>
+              <div class="feature-card">
+                <h4>Sistema de usuarios</h4>
+                <p>Registro, login, autenticación, sesiones y verificación de cuenta por correo electrónico.</p>
+              </div>
+              <div class="feature-card">
+                <h4>Recuperación de contraseña</h4>
+                <p>Flujo de recuperación de credenciales mediante correo electrónico.</p>
+              </div>
+              <div class="feature-card">
+                <h4>Panel administrativo</h4>
+                <p>Administración de servicios, reservas, curso, inscripciones e información del negocio.</p>
+              </div>
+              <div class="feature-card">
+                <h4>Gestión de servicios</h4>
+                <p>Servicios y precios almacenados y gestionados en base de datos.</p>
+              </div>
+              <div class="feature-card">
+                <h4>Curso de peluquería</h4>
+                <p>Página dedicada al curso con su propio sistema de inscripción.</p>
+              </div>
+              <div class="feature-card">
+                <h4>Galería</h4>
+                <p>Galería responsive con lightbox para mostrar trabajos del salón.</p>
+              </div>
+              <div class="feature-card">
+                <h4>Ubicación</h4>
+                <p>Mapa interactivo desarrollado con Leaflet.js y OpenStreetMap.</p>
+              </div>
+              <div class="feature-card">
+                <h4>Correos automáticos</h4>
+                <p>Integración SMTP para verificación de cuenta, recuperación de contraseña y avisos de reserva.</p>
+              </div>
+            </div>
+            <h3>Arquitectura</h3>
+            <div class="arch">
+              <div class="arch-step">
+                <span class="lbl">FRONTEND</span>
+                <p>HTML / CSS / JavaScript</p>
+              </div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-step">
+                <span class="lbl">API</span>
+                <p>PHP</p>
+              </div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-step">
+                <span class="lbl">BACKEND</span>
+                <p>Controllers · Services · Repositories · Models</p>
+              </div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-step">
+                <span class="lbl">DATABASE</span>
+                <p>MySQL / MariaDB</p>
+              </div>
+            </div>
+            <h3>Desafíos técnicos</h3>
+            <ul class="challenges">
+              <li>Migración de datos desde LocalStorage hacia MySQL</li>
+              <li>Implementación de autenticación de usuarios y gestión de sesiones</li>
+              <li>Validación de reservas y control de disponibilidad de horarios</li>
+              <li>Integración SMTP para verificación y notificaciones</li>
+              <li>Diseño responsive para desktop, tablet y mobile</li>
+              <li>Manejo de errores HTTP</li>
+              <li>Despliegue desde entorno local a hosting real</li>
+              <li>Configuración de dominio y DNS</li>
+              <li>Diseño de arquitectura backend con Controllers, Services, Repositories y Models</li>
+            </ul>
+            <div class="project-screenshots" aria-labelledby="capturas-marian">
+              <h3 id="capturas-marian">Capturas de Marian Estilista</h3>
+              <p>El sitio comercial, el flujo de reservas y la gestión del negocio. Seleccioná una captura para verla en
+                tamaño completo.</p>
+              <div class="screenshots-grid">
+                <figure class="screenshot-card"><a href="assets/images/marianestilista/home.png" target="_blank"
+                    rel="noopener" aria-label="Ampliar inicio del sitio (abre en otra pestaña)"><img
+                      src="assets/images/marianestilista/home.png" width="1899" height="1079" loading="lazy"
+                      decoding="async" alt="Presentación comercial de Marian Estilista y acceso a reservas."></a>
+                  <figcaption>Inicio del sitio<span aria-hidden="true">↗</span></figcaption>
+                </figure>
+                <figure class="screenshot-card"><a href="assets/images/marianestilista/servicios.png" target="_blank"
+                    rel="noopener" aria-label="Ampliar servicios (abre en otra pestaña)"><img
+                      src="assets/images/marianestilista/servicios.png" width="1047" height="1071" loading="lazy"
+                      decoding="async" alt="Catálogo de servicios del salón."></a>
+                  <figcaption>Servicios<span aria-hidden="true">↗</span></figcaption>
+                </figure>
+                <figure class="screenshot-card"><a href="assets/images/marianestilista/reservas_fecha.png"
+                    target="_blank" rel="noopener" aria-label="Ampliar selección de fecha (abre en otra pestaña)"><img
+                      src="assets/images/marianestilista/reservas_fecha.png" width="1233" height="1079" loading="lazy"
+                      decoding="async" alt="Paso de selección de fecha en el sistema de reservas."></a>
+                  <figcaption>Selección de fecha<span aria-hidden="true">↗</span></figcaption>
+                </figure>
+                <figure class="screenshot-card"><a href="assets/images/marianestilista/reservas_horario.png"
+                    target="_blank" rel="noopener"
+                    aria-label="Ampliar disponibilidad de horarios (abre en otra pestaña)"><img
+                      src="assets/images/marianestilista/reservas_horario.png" width="1234" height="1077" loading="lazy"
+                      decoding="async" alt="Paso de selección de horario para reservar un turno."></a>
+                  <figcaption>Disponibilidad de horarios<span aria-hidden="true">↗</span></figcaption>
+                </figure>
+                <figure class="screenshot-card"><a href="assets/images/marianestilista/panelAdmin_dashboard.png"
+                    target="_blank" rel="noopener" aria-label="Ampliar panel administrativo (abre en otra pestaña)"><img
+                      src="assets/images/marianestilista/panelAdmin_dashboard.png" width="1891" height="1078"
+                      loading="lazy" decoding="async" alt="Vista general del panel de gestión de Marian Estilista."></a>
+                  <figcaption>Panel administrativo<span aria-hidden="true">↗</span></figcaption>
+                </figure>
+                <figure class="screenshot-card"><a href="assets/images/marianestilista/home_version_mobile.png"
+                    target="_blank" rel="noopener" aria-label="Ampliar versión móvil (abre en otra pestaña)"><img
+                      src="assets/images/marianestilista/home_version_mobile.png" width="406" height="890"
+                      loading="lazy" decoding="async"
+                      alt="Página de inicio de Marian Estilista adaptada a una pantalla móvil."></a>
+                  <figcaption>Versión móvil<span aria-hidden="true">↗</span></figcaption>
+                </figure>
+              </div>
+              <details class="screenshots-more">
+                <summary>Más capturas del sitio y las reservas</summary>
+                <div class="screenshots-grid">
+                  <figure class="screenshot-card"><a href="assets/images/marianestilista/aboutme.png" target="_blank"
+                      rel="noopener" aria-label="Ampliar sobre el salón (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/aboutme.png" width="1581" height="1078" loading="lazy"
+                        decoding="async" alt="Sección de presentación del salón."></a>
+                    <figcaption>Sobre el salón<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                  <figure class="screenshot-card"><a href="assets/images/marianestilista/curso.png" target="_blank"
+                      rel="noopener" aria-label="Ampliar curso de peluquería (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/curso.png" width="1279" height="1074" loading="lazy"
+                        decoding="async" alt="Página del curso de peluquería."></a>
+                    <figcaption>Curso de peluquería<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                  <figure class="screenshot-card"><a href="assets/images/marianestilista/contacto.png" target="_blank"
+                      rel="noopener" aria-label="Ampliar contacto y ubicación (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/contacto.png" width="1231" height="1074" loading="lazy"
+                        decoding="async" alt="Sección de contacto de Marian Estilista."></a>
+                    <figcaption>Contacto y ubicación<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                  <figure class="screenshot-card"><a href="assets/images/marianestilista/reservas_servicio.png"
+                      target="_blank" rel="noopener"
+                      aria-label="Ampliar selección de servicio (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/reservas_servicio.png" width="1303" height="1079"
+                        loading="lazy" decoding="async" alt="Paso de elección de servicio para una reserva."></a>
+                    <figcaption>Selección de servicio<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                  <figure class="screenshot-card"><a href="assets/images/marianestilista/reserva_completardatos.png"
+                      target="_blank" rel="noopener"
+                      aria-label="Ampliar datos de la reserva (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/reserva_completardatos.png" width="1267" height="1079"
+                        loading="lazy" decoding="async" alt="Formulario de datos para completar la reserva."></a>
+                    <figcaption>Datos de la reserva<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                  <figure class="screenshot-card"><a href="assets/images/marianestilista/reserva_resumen.png"
+                      target="_blank" rel="noopener" aria-label="Ampliar resumen de reserva (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/reserva_resumen.png" width="1279" height="1079"
+                        loading="lazy" decoding="async" alt="Pantalla de resumen de los datos de la reserva."></a>
+                    <figcaption>Resumen de reserva<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                  <figure class="screenshot-card"><a href="assets/images/marianestilista/reserva_ticketcompletado.png"
+                      target="_blank" rel="noopener"
+                      aria-label="Ampliar confirmación de reserva (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/reserva_ticketcompletado.png" width="1273" height="1079"
+                        loading="lazy" decoding="async" alt="Comprobante de una reserva completada."></a>
+                    <figcaption>Confirmación de reserva<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                </div>
+              </details>
+              <details class="screenshots-more">
+                <summary>Más capturas del panel administrativo</summary>
+                <div class="screenshots-grid">
+                  <figure class="screenshot-card"><a href="assets/images/marianestilista/panelAdmin_clientes.png"
+                      target="_blank" rel="noopener"
+                      aria-label="Ampliar gestión de clientes (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/panelAdmin_clientes.png" width="1902" height="1079"
+                        loading="lazy" decoding="async" alt="Pantalla de clientes del panel administrativo."></a>
+                    <figcaption>Gestión de clientes<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                  <figure class="screenshot-card"><a href="assets/images/marianestilista/panelAdmin_config.png"
+                      target="_blank" rel="noopener" aria-label="Ampliar configuración (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/panelAdmin_config.png" width="1910" height="1072"
+                        loading="lazy" decoding="async" alt="Pantalla de configuración del panel administrativo."></a>
+                    <figcaption>Configuración<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                  <figure class="screenshot-card"><a href="assets/images/marianestilista/panelAdmin_editarServicios.png"
+                      target="_blank" rel="noopener"
+                      aria-label="Ampliar edición de servicios (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/panelAdmin_editarServicios.png" width="1887" height="1079"
+                        loading="lazy" decoding="async" alt="Pantalla de administración de servicios del salón."></a>
+                    <figcaption>Edición de servicios<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                  <figure class="screenshot-card"><a
+                      href="assets/images/marianestilista/panelAdmin_inscripcionesCurso.png" target="_blank"
+                      rel="noopener" aria-label="Ampliar inscripciones al curso (abre en otra pestaña)"><img
+                        src="assets/images/marianestilista/panelAdmin_inscripcionesCurso.png" width="1919" height="1078"
+                        loading="lazy" decoding="async" alt="Pantalla de administración de inscripciones al curso."></a>
+                    <figcaption>Inscripciones al curso<span aria-hidden="true">↗</span></figcaption>
+                  </figure>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+        <!-- ================= OTROS PROYECTOS ================= -->
+        <div class="detail-4 section-head reveal">
+          <div class="eyebrow">Repositorio</div>
+          <h2>Otros proyectos</h2>
+          <p>Una selección de repositorios de mi GitHub que muestran práctica con Java, lógica de programación y
+            desarrollo web.</p>
+        </div>
+        <div class="projects-grid reveal">
+          <div class="project-card">
+            <h3>Challenge Conversor de Monedas</h3>
+            <p>Aplicación en Java desarrollada como challenge del programa Oracle Next Education (Alura Latam),
+              consumiendo una API externa de tipos de cambio.</p>
+            <div class="chip-row">
+              <span class="chip">Java</span>
+              <span class="chip">API REST</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/PueblaTL/Challenge-Conversor-de-Monedas" target="_blank" rel="noopener">Ver
+                código →</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Encriptador de texto</h3>
+            <p>Aplicación web que encripta y desencripta texto sustituyendo vocales según reglas definidas, resuelta con
+              lógica de programación en el navegador.</p>
+            <div class="chip-row">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/PueblaTL/encriptador-de-texto.github.io" target="_blank" rel="noopener">Ver
+                código →</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="badge-collab">Colaboración</span>
+            <h3>Sistema GPPS</h3>
+            <p>Aplicación académica en equipo para gestionar prácticas profesionales supervisadas: proyectos, informes,
+              evaluaciones y seguimiento. Desarrollada en Java con JavaFX, Maven y MySQL.</p>
+            <div class="chip-row">
+              <span class="chip">Java</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/PainemalBraian/Sistema-GPPS" target="_blank" rel="noopener">Ver código →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="proceso">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Un proceso claro, de principio a fin</div>
+          <h2>¿Cómo trabajaremos?</h2>
+        </div>
+        <ol class="process-grid">
+          <li>
+            <span class="package-number">01</span>
+            <h3>Reunión inicial</h3>
+            <p>Conversamos sobre tu negocio, necesidades, público objetivo, funcionalidades, referencias y estilo
+              visual.</p>
+          </li>
+          <li>
+            <span class="package-number">02</span>
+            <h3>Propuesta</h3>
+            <p>Definimos alcance, funcionalidades, diseño, tecnologías, precio, tiempos y entregables.</p>
+          </li>
+          <li>
+            <span class="package-number">03</span>
+            <h3>Diseño y desarrollo</h3>
+            <p>Construyo la solución web a partir de la propuesta acordada.</p>
+          </li>
+          <li>
+            <span class="package-number">04</span>
+            <h3>Revisión</h3>
+            <p>Te presento el proyecto y realizamos los ajustes incluidos en el alcance.</p>
+          </li>
+          <li>
+            <span class="package-number">05</span>
+            <h3>Publicación</h3>
+            <p>Configuro el sitio en el dominio y hosting contratados para tu proyecto.</p>
+          </li>
+          <li>
+            <span class="package-number">06</span>
+            <h3>Entrega</h3>
+            <p>Recibís el proyecto y una explicación básica sobre su funcionamiento.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section id="sobre-mi">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="reveal">
+            <div class="eyebrow">Sobre mí</div>
+            <h2>Del diseño al backend</h2>
+            <p>Soy estudiante de la Licenciatura en Sistemas en la Universidad Nacional de Río Negro y desarrollador web
+              con especial interés en backend.</p>
+            <p>Me gusta desarrollar soluciones completas, entendiendo tanto la interfaz que utiliza el usuario como la
+              lógica del servidor, la base de datos y el despliegue. Además de continuar mi formación en Java y Spring
+              Boot, desarrollo sitios y sistemas web para negocios y profesionales.</p>
+            <p>He desarrollado proyectos completos donde tuve que resolver problemas reales relacionados con bases de
+              datos, autenticación, diseño responsive, hosting y despliegue. Actualmente profundizo mis conocimientos en
+              Java, Spring Boot y SQL, con el objetivo de especializarme en desarrollo backend.</p>
+          </div>
+          <div class="reveal">
+            <h3 class="detail-1">El flujo que me interesa dominar</h3>
+            <div class="about-flow">
+              <span>Frontend</span>
+              <span class="arrow">→</span>
+              <span>API</span>
+              <span class="arrow">→</span>
+              <span>Backend</span>
+              <span class="arrow">→</span>
+              <span>Base de datos</span>
+              <span class="arrow">→</span>
+              <span>Despliegue</span>
+            </div>
+            <p class="detail-2">Formación en curso, proyectos aplicados a casos reales y un interés genuino por entender
+              cómo se sostiene una aplicación en producción — esa es la base desde la que sigo aprendiendo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tecnologias">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="eyebrow">Stack</div>
+          <h2>Tecnologías con las que trabajo</h2>
+          <p>Sin porcentajes ficticios: estas son las herramientas que uso en mis proyectos.</p>
+        </div>
+        <div class="tech-grid reveal">
+          <div class="tech-cat">
+            <h3>Backend</h3>
+            <div class="chip-row">
+              <span class="chip">Java</span>
+              <span class="chip">Spring Boot · en formación</span>
+              <span class="chip">PHP</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">Arquitectura MVC</span>
+              <span class="chip">Autenticación</span>
+            </div>
+          </div>
+          <div class="tech-cat">
+            <h3>Desarrollo Web</h3>
+            <div class="chip-row">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Responsive Design</span>
+              <span class="chip">Consumo de APIs</span>
+            </div>
+          </div>
+          <div class="tech-cat">
+            <h3>Base de datos</h3>
+            <div class="chip-row">
+              <span class="chip">MySQL</span>
+              <span class="chip">MariaDB</span>
+              <span class="chip">SQL</span>
+            </div>
+          </div>
+          <div class="tech-cat">
+            <h3>Herramientas</h3>
+            <div class="chip-row">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">IntelliJ IDEA</span>
+              <span class="chip">phpMyAdmin</span>
+              <span class="chip">XAMPP</span>
+              <span class="chip">Laragon</span>
+              <span class="chip">GitHub Desktop</span>
+            </div>
+          </div>
+          <div class="tech-cat">
+            <h3>Web e infraestructura</h3>
+            <div class="chip-row">
+              <span class="chip">Hosting</span>
+              <span class="chip">DNS &amp; dominios</span>
+              <span class="chip">SMTP</span>
+              <span class="chip">Leaflet.js</span>
+              <span class="chip">OpenStreetMap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experiencia">
+      <div class="wrap">
+        <div class="two-col">
+          <div class="reveal">
+            <div class="eyebrow">Trayectoria</div>
+            <h2>Experiencia en proyectos</h2>
+            <div class="timeline-item">
+              <span class="when">Proyecto aplicado</span>
+              <h3>Marian Estilista</h3>
+              <p>Plataforma web desarrollada para un negocio real, con gestión de reservas, autenticación, base de datos
+                y despliegue en hosting.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="when">Formación</span>
+              <h3>Licenciatura en Sistemas</h3>
+              <p>Universidad Nacional de Río Negro (UNRN) — en curso.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="when">Capacitación</span>
+              <h3>Oracle Next Education · Alura Latam</h3>
+              <p>Challenges y prácticas orientadas a lógica de programación y Java.</p>
+            </div>
+          </div>
+          <div class="reveal">
+            <div class="eyebrow">Roadmap</div>
+            <h2>Actualmente aprendiendo</h2>
+            <ul class="roadmap">
+              <li>
+                <span class="idx">01</span>Java
+              </li>
+              <li>
+                <span class="idx">02</span>Spring Boot
+              </li>
+              <li>
+                <span class="idx">03</span>Arquitectura Backend
+              </li>
+              <li>
+                <span class="idx">04</span>SQL
+              </li>
+              <li>
+                <span class="idx">05</span>Estructuras de Datos
+              </li>
+              <li>
+                <span class="idx">06</span>Diseño y desarrollo de APIs REST
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="contact-box">
+            <div>
+              <div class="eyebrow">Contacto</div>
+              <h2>¿Tenés un proyecto?</h2>
+              <p>Si necesitás una página web, un catálogo, un sistema de reservas o una solución personalizada, podemos
+                analizar juntos qué alternativa se adapta mejor a tu proyecto.</p>
+              <p>También estoy abierto a oportunidades profesionales vinculadas al desarrollo web y backend.</p>
+              <p><a class="contact-email" href="mailto:agupuebla17@gmail.com">agupuebla17@gmail.com</a></p>
+              <div class="contact-actions" id="contactActions">
+                <a href="mailto:agupuebla17@gmail.com" class="btn btn-primary">Solicitar presupuesto por email ↗</a>
+                <a href="https://www.linkedin.com/in/agustin-puebla-468690181/" target="_blank" rel="noopener"
+                  class="btn btn-ghost">LinkedIn</a>
+                <a href="https://github.com/PueblaTL" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+              </div>
+            </div>
+            <noscript>
+              <p>Podés escribirme directamente a agupuebla17@gmail.com. La preparación del mensaje requiere JavaScript.
+              </p>
+            </noscript>
+            <form class="contact-form" id="contactForm" hidden>
+              <h3>Contame tu idea</h3>
+              <p class="form-note">Prepará tu consulta y abrila en tu aplicación de correo para enviarla a
+                agupuebla17@gmail.com. El envío se confirma desde tu correo.</p>
+              <div class="field">
+                <label for="cf-name">Nombre</label>
+                <input id="cf-name" name="name" required minlength="2" maxlength="100" autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email" type="email" required maxlength="254" autocomplete="email">
+              </div>
+              <div class="field">
+                <label for="cf-type">Tipo de proyecto</label>
+                <select id="cf-type" name="project">
+                  <option>Web Inicial</option>
+                  <option>Web Profesional</option>
+                  <option>Catálogo Administrable</option>
+                  <option>Desarrollo a Medida</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cf-message">Mensaje</label>
+                <textarea id="cf-message" name="message" rows="4" required minlength="10" maxlength="4000">
+</textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Preparar consulta</button>
+              <p id="formNote" class="form-note" role="status" aria-live="polite">
+              </p>
+              <div id="draftPanel" hidden>
+                <div class="field">
+                  <label for="draft">Tu consulta lista para copiar</label>
+                  <textarea id="draft" rows="7" readonly>
+</textarea>
+                </div>
+                <button id="copyDraft" type="button" class="btn btn-ghost">Copiar consulta</button>
+                <a id="emailDraft" class="solution-link" href="mailto:agupuebla17@gmail.com">Abrir consulta en mi correo
+                  ↗</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-name">Agustín Puebla</div>
+          <div class="footer-role">Desarrollador Web | Backend Developer</div>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:agupuebla17@gmail.com">Email</a>
+          <a href="https://github.com/PueblaTL" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/agustin-puebla-468690181/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-credit">Diseñado y desarrollado por Agustín Puebla · <span id="year">2026</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

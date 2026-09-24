@@ -1,0 +1,70 @@
+
+  :root{
+    color-scheme: dark;
+    --bg: #0B0D10;
+    --bg-alt: #11151A;
+    --card: #171C23;
+    --card-border: #232A34;
+    --text: #F5F7FA;
+    --text-muted: #9CA3AF;
+    --accent: #3B82F6;
+    --accent-soft: rgba(59,130,246,0.12);
+    --accent-2: #6366F1;
+
+    --header-bg: rgba(11,13,16,0.85);
+    --shadow-terminal: 0 1.875rem 3.75rem -1.875rem rgba(0,0,0,0.6);
+    --scanline-tint: rgba(255,255,255,0.035);
+
+    --term-text: #c9d3de;
+    --term-key: #79b8ff;
+    --term-string: #9ee493;
+    --term-comment: #7f8ea3;
+    --term-keyword: #e59fff;
+
+    --avail-text: #7ee0a8;
+    --avail-bg: rgba(45,212,132,0.08);
+    --avail-border: rgba(45,212,132,0.25);
+    --avail-dot: #2dd484;
+
+    --success-color: #7ee0a8;
+    --error-color: #f87171;
+
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+    --sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --max: 70rem;
+    --radius: 0.625rem;
+  }
+
+  /* Modo día: mismos tokens, tonos suaves. El acento se oscurece levemente
+     respecto al modo noche para mantener el contraste sobre fondos claros. */
+  [data-theme="light"]{
+    color-scheme: light;
+    --bg: #F7F8FA;
+    --bg-alt: #FFFFFF;
+    --card: #F1F4F8;
+    --card-border: #DCE1E8;
+    --text: #111827;
+    --text-muted: #5F6B7A;
+    --accent: #2563EB;
+    --accent-soft: rgba(37,99,235,0.10);
+    --accent-2: #4F46E5;
+
+    --header-bg: rgba(247,248,250,0.85);
+    --shadow-terminal: 0 1.5rem 3rem -1.75rem rgba(15,23,42,0.16);
+    --scanline-tint: rgba(15,23,42,0.035);
+
+    --term-text: #1f2937;
+    --term-key: #1d4ed8;
+    --term-string: #15803d;
+    --term-comment: #6b7280;
+    --term-keyword: #7c3aed;
+
+    --avail-text: #15803d;
+    --avail-bg: rgba(21,128,61,0.08);
+    --avail-border: rgba(21,128,61,0.25);
+    --avail-dot: #16a34a;
+
+    --success-color: #15803d;
+    --error-color: #dc2626;
+  }
+
